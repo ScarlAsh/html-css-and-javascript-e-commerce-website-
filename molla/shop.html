@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molla</title>
+    <link rel="icon" href="./images/icons/favicon-16x16.png" type="image/icon type">
+    <script src="https://use.fontawesome.com/fd2be831d3.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.0.js"></script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="header">
+            <img src="./images/demos/demo-3/logo.png" alt="logo">
+            <div class="icons">
+                <a href="./wishlist.html" class="heart-icon"><i class="fa fa-heart-o"></i></i></a>
+                <a href="./cart.html" class="cart-icon"><i class="fa fa-cart-plus"></i></a>
+                <img src="./images/profile.jpg" alt=""> 
+                <span class="dropdown-icon">
+                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+        
+    </header>
+    <!--end of header-->
+    <!--navbar-->
+    <nav>
+        <div class="nav">
+        <div class="categories" style="margin-left: 1rem;">
+            <span class="list-btn"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            <span id="browsecategory">Browse category</span>
+            <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+            <div class="categories-list">
+                <ul>
+                    <li><p>laptop</p></li>
+                    <li><p>mobile</p></li>
+                    <li><p>camera</p></li>
+                    <li><p>headphone</p></li>
+                    <li><p>tablet</p></li>
+                    <li><p>Daily Offers</p></li>
+                    <li><p>Gift Ideas</p></li>
+                    <li><p>Smart Watches</p></li>
+                    <li><p>Screens</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-list" style="padding-left: 2rem;">
+            <ul>
+                <li><a href="home.html">home</a><div id="underline"></div></li>
+                <li><a href="shop.html">shop</a><div id="underline"></div></li>
+                <li><a href="about.html">about</a><div id="underline"></div></li>
+                <li><a href="contact.html">contact us</a><div id="underline"></div></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!--end of navbar-->
+    <!--main-->
+    <main>
+        <div class="shop-search">
+            <div>
+                <input type="text" placeholder="Search for products">
+                <span><i class="fa fa-search" aria-hidden="true"></i></span>
+            </div>
+        </div>
+        <div class="main-container product-container shop">
+                <div class="filters">
+                    <p>Filters:</p>
+                    <div class="category">
+                        <div class="filter-header">
+                            <h6>Category</h6>
+                            <button><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="filter-body">
+                            <span><input type="checkbox" value ='Laptop'> Laptop</span>
+                        <span><input type="checkbox" value ='Tablet'> Tablet </span>
+                        <span><input type="checkbox" value ='Mobile'> Mobile</span>
+                        <span><input type="checkbox" value ='Camera'> Camera</span>
+                        <span><input type="checkbox" value ='Headphone'>HeadPhones</span>
+                        </div>    
+                    </div>
+                    <div class="brand">
+                        <div class="filter-header">
+                            <h6>Brand</h6>
+                            <button><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                            <div class="filter-body">
+                                <span><input type="checkbox" value ='Samsung'> Samsung </span>
+                            <span> <input type="checkbox" value ='Dell'> Dell</span>
+                            <span><input type="checkbox" value ='Sony'> Sony</span>
+                            <span><input type="checkbox" value ='HP'>Hp</span>
+                            <span><input type="checkbox" value ='Apple'> Apple</span>
+                            <span><input type="checkbox" value ='Apple'> Lenovo</span>
+                            <span><input type="checkbox" value ='Apple'> Huawai</span>
+                            <span><input type="checkbox" value ='Apple'> Canon</span>
+                            <span><input type="checkbox" value ='Apple'> Oppo</span>
+                            </div>
+                    </div>
+                    <div class="price">
+                        <div class="filter-header">
+                            <h6>Price</h6>
+                            <button><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="price-info">
+                            <p>Price Range : </p>
+                            <span class="s1">$</span>
+                            <input type="number" value="0" class="min">
+                            <span class="s2"> - </span>
+                            <span class="s3">$</span>
+                            <input type="number" value="1000" class="max">
+                        </div>
+                        <div class="filter-body">
+                            <!--<div class="slider">
+                            <div class="progress"></div>
+                            <div class="range">
+                                <input class="min" id ='r1' type = "range" min="0" max="800" step ='50'>
+                                <input class="max" id="r2" type = "range" min="200" max="1000" step ='50'>
+                            </div>
+                        </div>-->
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="sales-content">
+                    <div class="product">
+                        <div class="product-img">
+                        <img src="./images/demos/demo-3/products/product-2.jpg" alt="">
+                        <span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                        <div>
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            <a href=""> Add to Cart</a>
+                            </div>
+                        </div>
+                        <div  class='product-info'>
+                        <h6 class="ct">Smart Watches</h6>
+                        <h6 class="name">Apple - Alpple Watch Series 3 With White Sport Band</h6>
+                        <h6>$214.99</h6>
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                        <img src="./images/demos/demo-3/products/product-3.jpg" alt="">
+                        <span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                        <div>
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            <a href=""> Add to Cart</a>
+                            </div>
+                        </div>
+                        <div  class='product-info'>
+                        <h6 class="ct">Laptop</h6>
+                        <h6 class="name">Lenovo -330- 151KBR "15.6" </h6>
+                        <h6>$339.99</h6>
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                        <img src="./images/demos/demo-3/products/product-4.jpg" alt="">
+                        <span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                        <div>
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            <a href=""> Add to Cart</a>
+                            </div>
+                        </div>
+                        <div  class='product-info'>
+                        <h6 class="ct">Digital Camera</h6>
+                        <h6 class="name">Sony - Aplpha a5100 Mirrorless Camera </h6>
+                        <h6>$499.99</h6>
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                        <img src="./images/demos/demo-3/products/product-5.jpg" alt="">
+                        <span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                        <div>
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            <a href=""> Add to Cart</a>
+                            </div>
+                        </div>
+                        <div  class='product-info'>
+                        <h6 class="ct"> Digital Camera</h6>
+                        <h6 class="name">Canon 1897C003Aa</h6>
+                        <h6>$599.99</h6>
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                        <img src="./images/demos/demo-3/products/product-9.jpg" alt="">
+                        <span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                        <div>
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            <a href=""> Add to Cart</a>
+                            </div>
+                        </div>
+                        <div  class='product-info'>
+                        <h6 class="ct">Smart Watches</h6>
+                        <h6 class="name">Apple Smart Watch i15 Pro Max Pink Limited</h6>
+                        <h6>$199.99</h6>
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                        <img src="./images/demos/demo-3/products/product-11.jpg" alt="">
+                        <span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                        <div>
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            <a href=""> Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class='product-info'>
+                        <h6 class="ct">Laptop</h6>
+                        <h6 class="name">Dell MacBook Pro 15</h6>
+                        <h6>$12K</h6>
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="shop-controls">
+                        <button><a href="#"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Prev</a></button>
+                        <span><a href="#">1</a></span>
+                        <span><a href="#">2</a></span>
+                        <span><a href="#">3</a></span>
+                        <button><a href="#">Next<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></button>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <!--end of main-->
+    <!--footer-->
+    <footer>
+    <hr class="shop" id="shophr">
+        <div class="main-container footer shop">
+            <div class="right-side">
+                <h6>Molla</h6>
+                <p>The Electronic Store was established in March 2023.We provide an honest and reliable service.</p>
+                <div>
+                    <div class='icon'>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="contact">
+                        <p>Got Question? Call us 24/7</p>
+                        <h5>+01273648932</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="left-side">
+                <div>
+                    <h6>Useful Links</h6>
+                    <ul>
+                        <li>About Molla</li>
+                        <li>Our services</li>
+                        <li>How to shop on Molla</li>
+                        <li>Reviews</li>
+                        <li>Contact us</li>
+                        <li>owner</li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>Customer Service</h6>
+                    <ul>
+                        <li>Payment method</li>
+                        <li>Money back garentee</li>
+                        <li>Returns</li>
+                        <li>shipping</li>
+                        <li>terms and conditions</li>
+                        <li>privcy policy</li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>My Account</h6>
+                    <ul>
+                        <li>sign in</li>
+                        <li>view cart</li>
+                        <li>my wishlist</li>
+                        <li>track my order</li>
+                        <li>Reviews</li>
+                        <li>help</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-container footer-feet shop">
+            <div>
+                <h6>Copyright &copy; 2023 Tech Shop. All Rights Reserved.</h6>
+                <img src="./images/payment.jpeg" alt="">
+            </div>
+        </div>
+    </footer>
+<!--footer end-->
+
+<script src="script.js"></script>
+<script src="shopscript.js"></script>
+</body>
